@@ -9,9 +9,9 @@ XML_postToREST is a Python program for posting DOIs metadata in XML format to Da
 `xml_post_parser.py` is the program you will call to do the task
 
 It will call two python classes:
-* `xml_encode.py`: encode XML files to JSON envelope
+* `class_xml_encode.py`: encode XML files to JSON envelope
 
-* `json_post.py`: post JSON envelopes to server port
+* `class_json_post.py`: post JSON envelopes to server port
 
 
 <br/>
