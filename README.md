@@ -98,5 +98,8 @@ construct a dummy server using port 5000 in localhost
 
 you can view the posted json files on http://localhost:5000/data
 
-***Remember to change "server_port" in the config file to http://localhost:5000/ first***
+run `test_server.py` in one terminal and `xml_post_parser.py` in another
+
+
+***Remember to change "server_port" in the config file to http://localhost:5000/***
 
