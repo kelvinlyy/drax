@@ -1,5 +1,5 @@
-import xml_encode
-import json_post
+import class_xml_encode as xml_encode
+import class_json_post as json_post
 from os import listdir
 from os.path import isfile, join
 import os
