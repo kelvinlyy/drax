@@ -1,80 +1,89 @@
-## Post XML files to a server port
+# XML_postToREST
+
+XML_postToREST is a Python program for posting DOIs metadata in XML format to DataCite REST API
 
 <br/>
 
-### Step 1
+## Getting Started
+
+`xml_post_parser.py` is the program you will call to do the task
+
+It will call two python classes:
+* `xml_encode.py`: encode XML files to JSON envelope
+
+* `json_post.py`: post JSON envelopes to server port
+
 
 <br/>
 
-Check the `"xml_post_parser_config.json"` file for the configurations of the codes
+## Usage
+
+Check the configuration file `xml_post_parser_config.json` and start configure your program:
 
 <br/>
+
 
 **Important fields**
 
-`"server_port"`:
+```
+"server_port":
 
 the location you want to post your files to
 
-`"bearer_auth_key"`:
+"bearer_auth_key":
 
 your Bearer Auth key to access DataCite REST API
 
-`"prefix"`:
+"prefix":
 
 namespace of the DOIs you are using
 
-`"schema_url"`:
+"schema_url":
 
 schema for the DOIs
+```
 
-<br/>
 
 **Folder names**
 
-`"xml_folder"`:
+```
+"xml_folder":
 
 the directory for your input XML files
 
-`"json_folder"`:
+"json_folder":
 
 the directory for your JSON envelopes to be stored at
 
-`"processed_xml_folder"`:
+"processed_xml_folder":
 
 the directory for your processed XML files
 
-`"posted_json_folder"`:
+"posted_json_folder":
 
 the directory for your successfully posted JSON envelopes
 
-`"post_failed_folder"`:
+"post_failed_folder":
 
 the directory for your JSON envelopes that failed to post
 
+```
 <br/>
+----------------------------------------
 
-### Step 2
-
-<br/>
-
-From the config file, use the value of `"xml_folder"` as the name to create a folder in the same directory
+Then from the config file, use the value of `"xml_folder"` as the name to create a folder in the same directory
 
 Store your xml files to be posted to the folder
 
 <br/>
 
-### Step 3
+Last, run `xml_post_parser.py`
 
-<br/>
-
-Run the python script
-
-```python
+``` python
 python xml_post_parser.py
 ```
 
-The XML files will now begin to be encoded into JSON files and then posted to the server port
+XML files will begin to be encoded into JSON files and then posted to the server port
 
 **Successfully posted** files will be stored at `"posted_json_folder"`
 
@@ -82,21 +91,12 @@ The XML files will now begin to be encoded into JSON files and then posted to th
 
 <br/>
 
-## Additional files
+## Additional file for testing
 
-<br/>
+`tests/test_server.py`:
 
-`clear_folders.py`:
+construct a dummy server at http://localhost:5000
 
-empty all folders after posting (except `"xml_src"`)
+you can post data to http://localhost:5000 and view the posted data on http://localhost:5000/data
 
-<br/>
-
-`test_server.py`:
-
-construct a dummy server using port 5000 in localhost
-
-you can view the posted json files on http://localhost:5000/data
-
-***Remember to change "server_port" in the config file to http://localhost:5000/ first***
-
+***Remember to change "server_port" in the config file to http://localhost:5000/***
