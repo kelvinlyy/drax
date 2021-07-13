@@ -1,0 +1,12 @@
+{
+    "server_port": "Your server port",
+    "bearer_auth_key": "Your Bearer key",
+    "prefix": "Your DOIs' namespace",
+    "schema_url": "https://schema.datacite.org",
+
+    "xml_folder": "xml_src",
+    "json_folder": "json_envelopes",
+    "processed_xml_folder": "processed_xml",
+    "posted_json_folder": "posted_json",
+    "post_failed_folder": "failed_json"
+}
