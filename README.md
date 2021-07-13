@@ -97,13 +97,6 @@ XML files will begin to be encoded into JSON files and then posted to the server
 
 construct a dummy server at http://localhost:5000
 
-<<<<<<< HEAD
 you can post data to http://localhost:5000 and view the posted data on http://localhost:5000/data
-=======
-run `test_server.py` in one terminal and `xml_post_parser.py` in another
-
-
-***Remember to change "server_port" in the config file to http://localhost:5000/***
->>>>>>> 40e4ec154fd62e1340fa852dfb1e626ccaaa75bb
 
 ***Remember to change "server_port" in the config file to http://localhost:5000/***
