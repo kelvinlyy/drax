@@ -2,7 +2,7 @@
 
 DRAX is a Python program for posting bulk DOIs metadata in XML format using DataCite REST API
 
-If you provide XML files, it will convert to a JSON file and post it with REST API
+If you provide XML files, it will convert them to JSON files and post with REST API
 
 <br/>
 
