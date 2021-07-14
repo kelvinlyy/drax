@@ -1,6 +1,8 @@
-# XML_postToREST
+# DRAX (DataCite Rest Api for Xml)
 
-XML_postToREST is a Python program for posting DOIs metadata in XML format to DataCite REST API
+DRAX is a Python program for posting bulk DOIs metadata in XML format using DataCite REST API
+
+If you provide XML files, it will convert to a JSON file and post it with REST API
 
 <br/>
 
