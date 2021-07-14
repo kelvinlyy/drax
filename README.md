@@ -71,7 +71,8 @@ the directory for your JSON envelopes that failed to post
 
 ```
 <br/>
-----------------------------------------
+
+---
 
 Then from the config file, use the value of `"xml_folder"` as the name to create a folder in the same directory
 
@@ -102,3 +103,9 @@ construct a dummy server at http://localhost:5000
 you can post data to http://localhost:5000 and view the posted data on http://localhost:5000/data
 
 ***Remember to change "server_port" in the config file to http://localhost:5000/***
+
+<br/>
+
+---
+
+This work was carried out under the ITC STEM Internship Scheme from the The Hong Kong University of Science and Technology in collaboration with GigaScience - BGI.
