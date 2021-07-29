@@ -1,8 +1,15 @@
-cff-version: 1.1.0
-message: If you use this software, please cite it as below.
-authors:
-  - family-names: Lai
-    given-names: Yung Yin
-title: DataCite Rest Api for Xml
-version: 1.0
-date-released: 2021-07-21
+authors: 
+  -
+    family-names: Lai
+    given-names: "Yung Yin"
+cff-version: "1.1.0"
+date-released: 2021-07-14
+keywords: 
+  - dois
+  - restapi
+  - datacite
+license: MIT
+message: "If you use this software, please cite it using these metadata."
+repository-code: "https://github.com/kelvinlyy/drax"
+title: "DataCite Rest Api for Xml"
+version: "1.0"
