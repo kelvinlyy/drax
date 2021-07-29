@@ -1,0 +1,60 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "license": "https://spdx.org/licenses/MIT",
+    "codeRepository": "https://github.com/kelvinlyy/drax.git",
+    "dateCreated": "2021-06-29",
+    "datePublished": "2021-07-14",
+    "dateModified": "2021-07-13",
+    "downloadUrl": "https://github.com/kelvinlyy/drax.git",
+    "issueTracker": "https://github.com/kelvinlyy/drax/issues",
+    "name": "DRAX",
+    "version": "1.0",
+    "description": "It is a Python program for posting bulk DOIs metadata in XML format using DataCite REST API\n\nIf you provide XML files, it will convert them to JSON files and post with REST API",
+    "applicationCategory": "Dois",
+    "developmentStatus": "active",
+    "isPartOf": "https://api.datacite.org/",
+    "keywords": [
+        "dois",
+        "datacite",
+        "restapi"
+    ],
+    "programmingLanguage": [
+        "Python 3"
+    ],
+    "runtimePlatform": [
+        "Python Runtime Environment"
+    ],
+    "operatingSystem": [
+        "Linux",
+        "Windows",
+        "MacOS"
+    ],
+    "softwareRequirements": [
+        "Python 3"
+    ],
+    "relatedLink": [
+        "https://api.datacite.org/"
+    ],
+    "author": [{
+        "@type": "Person",
+        "givenName": "Yung Yin",
+        "familyName": "Lai",
+        "email": "kelvinklyy@gmail.com",
+        "affiliation": {
+            "@type": "Organization",
+            "name": "DataCite"
+        }
+    }],
+    "contributor": [{
+        "@type": "Person",
+        "@id": "https://orcid.org/0000-0003-3484-6875",
+        "givenName": "Kristian",
+        "familyName": "Garza",
+        "email": "kgarza@datacite.org",
+        "affiliation": {
+            "@type": "Organization",
+            "name": "Product Designer, DataCite"
+        }
+    }]
+}
